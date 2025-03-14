@@ -1,0 +1,13 @@
+1.  How to start SQLite3 CLI
+
+PS C:\_tools\sqlite> sqlite3
+SQLite version 3.46.1 2024-08-13 09:16:08 (UTF-16 console I/O)
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite>
+
+2.  How to Exit SQLite3 CLI
+
+sqlite> .exit
+PS C:\_tools\sqlite>
