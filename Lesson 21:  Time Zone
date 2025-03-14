@@ -1,0 +1,20 @@
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+# Get the current time in UTC
+utc_now = datetime.now(ZoneInfo("UTC"))
+print(f"Current time in UTC: {utc_now}")
+
+# Get the current time in a specific timezone (e.g., America/Los_Angeles)
+la_now = datetime.now(ZoneInfo("America/Los_Angeles"))
+print(f"Current time in Los Angeles: {la_now}")
+
+# Convert a datetime object from one timezone to another
+utc_time = datetime(2025, 3, 15, 12, 0, 0, tzinfo=ZoneInfo("UTC"))
+la_time = utc_time.astimezone(ZoneInfo("America/Los_Angeles"))
+print(f"UTC time: {utc_time}")
+print(f"Los Angeles time: {la_time}")
+
+# Perform calculations with timezone-aware datetime objects
+time_difference = la_now - utc_now
+print(f"Time difference between Los Angeles and UTC: {time_difference}")
