@@ -1,0 +1,23 @@
+1. Download the SQLite Tools:
+Go to the SQLite download page. 
+Download the pre-compiled binaries for your operating system (Windows, macOS, or Linux). 
+Choose the appropriate package based on your system architecture (e.g., x86 or x64). 
+
+2. Extract the Downloaded Files:
+Unzip or extract the downloaded file to a directory of your choice.
+For example, you could create a folder named sqlite in C:\Program Files on Windows.
+
+3. Add the SQLite Tools Directory to your PATH:
+Windows:
+Open the System Environment Variables Control Panel shortcut. 
+Go to environment variables, choose Path variable, and add the path to the directory where you extracted the SQLite tools (e.g., C:\Program Files\sqlite). 
+Close and reopen any command prompts or terminals. 
+macOS/Linux:
+Edit your shell's configuration file (e.g., ~/.bashrc, ~/.zshrc). 
+Add a line that sets the PATH environment variable to include the directory containing the SQLite tools. 
+Source the configuration file or restart your terminal. 
+
+4. Verify the Installation:
+Open a new command prompt or terminal.
+Type sqlite3 --version and press Enter.
+If SQLite is installed correctly, the version information will be displayed. 
