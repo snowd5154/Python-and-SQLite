@@ -1,0 +1,26 @@
+Print statements:
+Strategically placing print() statements helps track variable values and program flow. While simple, this method can quickly pinpoint issues in smaller scripts.
+
+Python Debugger (pdb):
+The built-in pdb allows interactive debugging with breakpoints, stepping through code line by line, and inspecting variables. It's invoked using import pdb; pdb.set_trace() or the breakpoint() function (in Python 3.7+).
+
+Integrated Development Environment (IDE) Debuggers:
+IDEs like PyCharm and VS Code offer visual debuggers with features such as breakpoints, variable inspection, and step-by-step execution, streamlining the debugging process.
+
+Logging:
+The logging module provides a more robust way to track events and errors, especially in larger applications. It allows different levels of logging (e.g., debug, info, warning, error) and can be configured to output to files or the console.
+
+Assertions:
+The assert statement checks conditions and raises an AssertionError if false. This is useful for verifying assumptions and catching errors early in development.
+
+Unit testing:
+Writing unit tests with the unittest framework helps ensure individual components of the code function correctly. This practice can prevent bugs and makes debugging easier.
+
+Clean code and code reviews:
+Well-structured and readable code reduces the likelihood of errors and simplifies debugging. Regular code reviews can also help catch potential issues early on.
+
+Interactive debugging with ipdb:
+ipdb, an enhanced version of pdb, provides a more user-friendly and interactive debugging experience with IPython features.
+
+Exercism:
+Platforms like Exercism offer coding exercises and mentorship, which can help improve debugging skills through practice and feedback.
