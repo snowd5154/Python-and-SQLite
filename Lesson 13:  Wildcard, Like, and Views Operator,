@@ -1,0 +1,13 @@
+1.  Wilcard
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+2.  Like
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+3.  Operators
+
+https://www.w3schools.com/sql/sql_operators.asp
