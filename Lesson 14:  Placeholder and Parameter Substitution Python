@@ -1,0 +1,31 @@
+1.  Formatting
+
+name = "Alice"
+age = 30
+print("Name: %s, Age: %d" % (name, age))
+# Output: Name: Alice, Age: 30
+
+2.  Str.format
+
+name = "Bob"
+age = 25
+print("Name: {}, Age: {}".format(name, age))
+# Output: Name: Bob, Age: 25
+print("Name: {1}, Age: {0}".format(age, name))
+# Output: Name: Bob, Age: 25
+print("Name: {person_name}, Age: {person_age}".format(person_name=name, person_age=age))
+# Output: Name: Bob, Age: 25
+
+3.  f string
+
+name = "Charlie"
+age = 35
+print(f"Name: {name}, Age: {age}")
+# Output: Name: Charlie, Age: 35
+
+4.  string template
+
+from string import Template
+template = Template("Name: $name, Age: $age")
+print(template.substitute(name="David", age=40))
+# Output: Name: David, Age: 40
