@@ -1,0 +1,5 @@
+1.  Creating Databases
+
+PS C:\Users\Owner> sqlite3 todo.db
+SQLite version 3.46.1 2024-08-13 09:16:08 (UTF-16 console I/O)
+Enter ".help" for usage hints.
