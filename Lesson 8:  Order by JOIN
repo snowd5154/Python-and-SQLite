@@ -1,0 +1,10 @@
+1.  Order By
+
+SELECT * FROM Products
+ORDER BY Price;
+
+2. JOIN
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
