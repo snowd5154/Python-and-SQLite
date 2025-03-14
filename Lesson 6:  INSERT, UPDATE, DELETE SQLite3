@@ -1,0 +1,29 @@
+CREATE TABLE [Subjects] (  
+    [SubjectId] INTEGER NOT NULL PRIMARY KEY ON CONFLICT IGNORE,
+    [SubjectName] NVARCHAR NOT NULL
+);
+
+___________________________________________________________________________
+
+INSERT INTO Subjects VALUES(1, 'Algebra');
+INSERT INTO Subjects VALUES(2, 'Database Course');
+INSERT INTO Subjects VALUES(2, 'Data Structures');
+INSERT INTO Subjects VALUES(4, 'Algorithms');
+
+___________________________________________________________________________
+
+SELECT * FROM Subjects;
+___________________________________________________________________________
+
+DROP TABLE Subjects;
+
+
+Update:
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+Delete:
+
+DELETE FROM table_name WHERE condition;
