@@ -1,0 +1,23 @@
+from datetime import datetime
+
+now = datetime.now()
+
+# Example 1: Year-month-day
+formatted_date = now.strftime("%Y-%m-%d")
+print(f"Formatted date (YYYY-MM-DD): {formatted_date}")
+
+# Example 2: Hour:Minute:Second
+formatted_time = now.strftime("%H:%M:%S")
+print(f"Formatted time (HH:MM:SS): {formatted_time}")
+
+# Example 3: Day MonthName, Year
+formatted_date_long = now.strftime("%d %B, %Y")
+print(f"Formatted date (Day Month, Year): {formatted_date_long}")
+
+# Example 4: Weekday, Month Day, Year Hour:Minute AM/PM
+formatted_all = now.strftime("%A, %B %d, %Y %I:%M %p")
+print(f"Formatted date and time: {formatted_all}")
+
+# Example 5: Custom format
+formatted_custom = now.strftime("Today is %A, %d of %B in the year %Y")
+print(f"Custom formatted date: {formatted_custom}")
