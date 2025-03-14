@@ -1,0 +1,6 @@
+divisor = 0
+if divisor != 0:
+    result = 10 / divisor
+    print(result)
+else:
+    print("Cannot divide by zero!")
