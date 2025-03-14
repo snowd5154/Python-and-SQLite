@@ -1,0 +1,31 @@
+I came across this answer, which gave me the clues I needed.
+
+Working solution was to have a inherit sqlite3.Connection and have a custom cursor function that accepted kwargs. This can also be passed directly to sqlite3 as the connection factory.
+
+# in my test code
+import sqlite3
+from contextlib import contextmanager
+
+class TestConnect(sqlite3.Connection):
+    def cursor(self, **kwargs):
+        return super(TestConnect, self).cursor()
+
+@contextmanager
+def get_connection():
+    conn = sqlite3.connect(':memory:', factory=TestConnect)
+    # do some database setup
+    try:
+        yield conn
+    finally:
+        conn.close()
+        
+
+# The function I'm trying to test
+def send_query():
+    with get_connection() as conn:
+        cur = conn.cursor(row_factory='foo')
+        cur.execute("CREATE TABLE scores_view(foo, bar, baz)")
+        data = cur.fetchall()
+        return data
+
+send_query() 
